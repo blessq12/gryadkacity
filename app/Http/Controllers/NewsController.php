@@ -9,6 +9,9 @@ class NewsController extends Controller
 {
     public function single($uri = null)
     {
-        return view('single-news');
+        $news = $uri;
+        return view('single-news',[
+            'news_data' => $news
+        ]);
     }
 }

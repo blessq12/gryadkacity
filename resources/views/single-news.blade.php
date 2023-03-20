@@ -5,7 +5,7 @@
     <div class="page-header__bg" style="background-image: url(/assets/images/backgrounds/page-header-bg-1-1.jpg);"></div>
     <!-- /.page-header__bg -->
     <div class="container">
-        <h2>Blog Details</h2>
+        <h2>{{ $news_data }}</h2>
         <ul class="thm-breadcrumb list-unstyled">
             <li><a href="index.html">Home</a></li>
             <li>/</li>
