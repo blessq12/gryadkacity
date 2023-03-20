@@ -15,17 +15,18 @@ use App\Http\Controllers\NewsController;
 |
 */
 //subdomains group
-Route::domain('fr.gryadkacity.dd')->group(function(){
-    Route::any('/',function(){
-        return 'asdasd';
-    });
+Route::group(['domain' => '{sub}.' .env('APP_URL')],function(){
+    Route::get('/',function(){return 'franshiza';})->name('franshiza');  
 });
 
-Route::get('/',[MainController::class,'index'])->name('index');
-Route::get('/about',[MainController::class,'about'])->name('about');
+//main domain group routes
+Route::group(['domain'=> env('APP_URL')],function(){
+    Route::get('/',[MainController::class,'index'])->name('index');
+    Route::get('/about',[MainController::class,'about'])->name('about');
+    Route::get('/news',[MainController::class,'news'])->name('news');
+    Route::get('/news/{uri}',[NewsController::class,'single']);
+    Route::get('/contact',[MainController::class,'contact'])->name('contact');
+});
 
-Route::get('/news',[MainController::class,'news'])->name('news');
-Route::get('/news/{uri}',[NewsController::class,'single']);
 
-Route::get('/contact',[MainController::class,'contact'])->name('contact');
 

@@ -58,35 +58,35 @@
             </div><!-- /.col-sm-12 col-md-6 col-lg-2 -->
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-2">
                 <div class="footer-widget">
-                    <h3 class="footer-widget__title">Explore</h3><!-- /.footer-widget__title -->
+                    <h3 class="footer-widget__title">Ссылки</h3><!-- /.footer-widget__title -->
                     <ul class="list-unstyled footer-widget__links">
                         <li>
-                            <a href="products.html">New Products</a>
+                            <a href="{{ route('franshiza',['sub'=>'fr']) }}">Франшиза</a>
                         </li>
                         <li>
-                            <a href="checkout.html">My Account</a>
+                            <a href="#">Дни рождения</a>
                         </li>
                         <li>
-                            <a href="contact.html">Support</a>
+                            <a href="#">Новый год</a>
                         </li>
                         <li>
-                            <a href="contact.html">FAQs</a>
+                            <a href="#">Каникулы</a>
                         </li>
-                    </ul><!-- /.list-unstyled footer-widget__contact -->
-                </div><!-- /.footer-widget -->
-            </div><!-- /.col-sm-12 col-md-6 col-lg-2 -->
+                    </ul>
+                </div>
+            </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
                 <div class="footer-widget">
-                    <h3 class="footer-widget__title">Newsletter</h3><!-- /.footer-widget__title -->
+                    <h3 class="footer-widget__title">Быть в курсе новостей</h3>
                     <form action="#" data-url="YOUR_MAILCHIMP_URL" class="mc-form">
-                        <input type="email" name="EMAIL" id="mc-email" placeholder="Email Address">
-                        <button type="submit">Subscribe</button>
+                        <input type="email" name="EMAIL" id="mc-email" placeholder="Введите ваш Email">
+                        <button type="submit">Подписаться</button>
                     </form>
-                    <div class="mc-form__response"></div><!-- /.mc-form__response -->
-                </div><!-- /.footer-widget -->
-            </div><!-- /.col-sm-12 col-md-6 col-lg-2 -->
-        </div><!-- /.row -->
-    </div><!-- /.container -->
+                    <div class="mc-form__response"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="bottom-footer">
         <div class="container">
             <hr>
@@ -95,14 +95,13 @@
                     <a href="#" class="fab fa-twitter"></a>
                     <a href="#" class="fab fa-facebook-square"></a>
                     <a href="#" class="fab fa-instagram"></a>
-                </div><!-- /.bottom-footer__social -->
-                <p class="thm-text-dark">© Copyright <span class="dynamic-year"></span> by Company.com</p>
-            </div><!-- /.inner-container -->
-        </div><!-- /.container -->
-    </div><!-- /.bottom-footer -->
-</footer><!-- /.site-footer -->
-
-</div><!-- /.page-wrapper -->
+                </div>
+                <p class="thm-text-dark text-uppercase">Разработано {{--<span class="dynamic-year"></span>--}}<a href="http://code-me.ru">code-me</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
 
 
 
