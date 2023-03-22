@@ -61,7 +61,7 @@
                     <h3 class="footer-widget__title">Ссылки</h3><!-- /.footer-widget__title -->
                     <ul class="list-unstyled footer-widget__links">
                         <li>
-                            <a href="{{ route('franshiza',['sub'=>'fr']) }}">Франшиза</a>
+                            <a href="{{ route('subroute',['sub'=>'franshiza']) }}">Франшиза</a>
                         </li>
                         <li>
                             <a href="#">Дни рождения</a>

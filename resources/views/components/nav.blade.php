@@ -46,7 +46,7 @@
             </div><!-- /.main-logo -->
             <ul class="main-menu__list">
                 <li><a href="{{ route('index') }}">{{ __('Главная')}}</a></li>
-                <li><a href="{{ route('about') }}">{{ __('О нас') }}</a></li>
+                <li><a href="{{ route('about') }}">{{ __('Про грядку') }}</a></li>
                 <li><a href="{{ route('news') }}">{{ __('Новости')}}</a></li>
                 <li><a href="{{ route('contact') }}">{{ __('Контакты')}}</a></li>
             </ul>
