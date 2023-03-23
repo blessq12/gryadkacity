@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\MainController;
-use App\Http\Controllers\NewsController;
 use Illuminate\Http\Request;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -26,15 +26,13 @@ Route::group(['domain' => '{sub}.' .env('APP_URL')],function($sub){
 //main domain group routes
 Route::group(['domain'=> env('APP_URL')],function(){
 
-    Route::get('/',function(){return 'main page';})->name('index');
     // About group
     $aboutRoutes = function(){
-        Route::get('/about',function(){ return 'about';})->name('index');
-        Route::get('/about/kids',function(){ return 'about kids';})->name('kids');
-        Route::get('/about/parent',function(){ return 'about parent';})->name('parent');
-        Route::get('/about/team',function(){ return 'about team';})->name('team');
+        Route::get('/',function(){ return 'about';})->name('index');
+        Route::get('/kids',function(){ return 'about kids';})->name('kids');
+        Route::get('/parent',function(){ return 'about parent';})->name('parent');
+        Route::get('/team',function(){ return 'about team';})->name('team');
     };
-    Route::group(['prefix'=>'about','as'=>'about.'],$aboutRoutes);
     // end about
 
     // Types visit group
@@ -47,28 +45,30 @@ Route::group(['domain'=> env('APP_URL')],function(){
         Route::get('/graduation',function(){return 'Выпускной(дети заканчиваю школу/четверть и тд)';})->name('graduation');
         Route::get('/newyear',function(){return 'Новый год 2024';})->name('newyear');
     };
-    Route::group(['prefix'=>'visit','as'=>'visit.'],$visitRoutes);
     // end Types visit group
 
     // gryadkacity life group
     $lifeRoutes = function(){
-        Route::get('/life/professions',function(){return 'Описание профессий';})->name('professions');
-        Route::get('/life/career',function(){return 'Описание профессий';})->name('career');
-        Route::get('/life/events',function(){return 'городские мероприятия';})->name('events');
+        Route::get('/professions',function(){return 'Описание профессий';})->name('professions');
+        Route::get('/career',function(){return 'Описание профессий';})->name('career');
+        Route::get('/events',function(){return 'городские мероприятия';})->name('events');
     };
-    Route::group(['prefix'=>'life','as'=>'life.'],$lifeRoutes);
     // end gryadkacity life group
 
     // partnership group
     $partnerRoutes = function(){
-        Route::get('/cooperation/partnership',function(){return 'Партнерство';})->name('partnership');
-        Route::get('/cooperation/franchise',function(){return 'Франшиза';})->name('franchise');
-        Route::get('/cooperation/corporate-clients',function(){return 'Корпоративные клиенты';})->name('corporate-clients');
+        Route::get('/partnership',function(){return 'Партнерство';})->name('partnership');
+        Route::get('/franchise',function(){return 'Франшиза';})->name('franchise');
+        Route::get('/corporate-clients',function(){return 'Корпоративные клиенты';})->name('corporate-clients');
     };
-    Route::group(['prefix'=>'cooperation','as'=>'cooperation.'],$partnerRoutes);
     // end partnership group
 
-    Route::get('/contact',[MainController::class,'contact'])->name('contact');
+    Route::get('/',function(){return 'main page';})->name('index');
+    Route::group(['prefix'=>'about','as'=>'about.'],$aboutRoutes);
+    Route::group(['prefix'=>'visit','as'=>'visit.'],$visitRoutes);
+    Route::group(['prefix'=>'life','as'=>'life.'],$lifeRoutes);
+    Route::group(['prefix'=>'cooperation','as'=>'cooperation.'],$partnerRoutes);
+    Route::get('/contact',function(){return 'contact';})->name('contact');
 });
 
 
