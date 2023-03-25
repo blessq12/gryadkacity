@@ -1,9 +1,14 @@
 <?php
 
+// controllers
+use App\Http\Controllers\MainController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\LifeController;
+use App\Http\Controllers\PartnershipController;
+use App\Http\Controllers\VisitController;
+// fasades
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
-
-
 
 /*
 |--------------------------------------------------------------------------
@@ -28,10 +33,10 @@ Route::group(['domain'=> env('APP_URL')],function(){
 
     // About group
     $aboutRoutes = function(){
-        Route::get('/',function(){ return 'about';})->name('index');
-        Route::get('/kids',function(){ return 'about kids';})->name('kids');
-        Route::get('/parent',function(){ return 'about parent';})->name('parent');
-        Route::get('/team',function(){ return 'about team';})->name('team');
+        Route::get('/','index')->name('index');
+        Route::get('/kids','kids')->name('kids');
+        Route::get('/parent','parent')->name('parent');
+        Route::get('/team','team')->name('team');
     };
     // end about
 
@@ -63,12 +68,32 @@ Route::group(['domain'=> env('APP_URL')],function(){
     };
     // end partnership group
 
-    Route::get('/',function(){return 'main page';})->name('index');
-    Route::group(['prefix'=>'about','as'=>'about.'],$aboutRoutes);
-    Route::group(['prefix'=>'visit','as'=>'visit.'],$visitRoutes);
-    Route::group(['prefix'=>'life','as'=>'life.'],$lifeRoutes);
-    Route::group(['prefix'=>'cooperation','as'=>'cooperation.'],$partnerRoutes);
-    Route::get('/contact',function(){return 'contact';})->name('contact');
+    // AboutController routes group
+    Route::controller(AboutController::class)
+        ->prefix('about')
+        ->name('about.')
+        ->group($aboutRoutes);
+    // VisitController routes group
+    Route::controller(VisitController::class)
+        ->prefix('visit')
+        ->name('visit.')
+        ->group($visitRoutes);
+    // LifeController routes group
+    Route::controller(LifeController::class)
+        ->prefix('life')
+        ->name('life.')
+        ->group($lifeRoutes);
+    // PartnershipController routes group
+    Route::controller(PartnershipController::class)
+        ->prefix('cooperation')
+        ->name('cooperation.')
+        ->group($partnerRoutes);
+    // MainController routes group
+    Route::controller(MainController::class)
+        ->group(function(){
+            Route::get('/','index')->name('index');
+            Route::get('/contact','contact')->name('contact');
+        });
 });
 
 
