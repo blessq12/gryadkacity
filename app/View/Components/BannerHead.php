@@ -6,16 +6,14 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Head extends Component
+class BannerHead extends Component
 {
     /**
      * Create a new component instance.
      */
     public function __construct(
         public string $title,
-        public string $description,
-        public string $image = 'http://via.placeholder.com/1920x1080',
-        
+        public $breadcrumb
     )
     {
         //
@@ -26,6 +24,6 @@ class Head extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.head');
+        return view('components.banner-head');
     }
 }

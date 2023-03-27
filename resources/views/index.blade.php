@@ -1,4 +1,4 @@
-@extends('components.front-layout')
+@extends('components.'.$layout)
 @section('content')
 <section class="main-slider main-slider__two">
     <div class="swiper-container thm-swiper__slider" data-swiper-options='{

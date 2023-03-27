@@ -45,10 +45,10 @@
                 <span class="fa fa-bars mobile-nav__toggler"></span>
             </div><!-- /.main-logo -->
             <ul class="main-menu__list">
-                <li><a href="{{ route('') }}">{{ __('Главная')}}</a></li>
-                <li><a href="{{ route('') }}">{{ __('Про грядку') }}</a></li>
-                <li><a href="{{ route('') }}">{{ __('Новости')}}</a></li>
-                <li><a href="{{ route('') }}">{{ __('Контакты')}}</a></li>
+                <li><a href="#">{{ __('Главная')}}</a></li>
+                <li><a href="#">{{ __('Про грядку') }}</a></li>
+                <li><a href="#">{{ __('Новости')}}</a></li>
+                <li><a href="#">{{ __('Контакты')}}</a></li>
             </ul>
             <!-- /.main-menu__list -->
             <div class="topbar__buttons">

@@ -3,19 +3,51 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use SebastianBergmann\CliParser\RequiredOptionArgumentMissingException;
 
 class AboutController extends Controller
 {
     public function index(){
-        return 'about index method';
+        $breadcrumb = [['title' => 'О нас','url' => 'about.index']];
+        $page = [
+          'layout' => 'default-layout',
+          'title' => 'О нас',
+          'description' => 'Описание страницы о нас',
+          'breadcrumb' => $breadcrumb
+        ];
+        return view('about',$page);
     }
     public function kids(){
-        return 'about kids method';
+        $breadcrumb = [
+            ['title' => 'О нас','url' => 'about.index'],['title' => 'Детям','url' => 'about.kids']];
+        $page = [
+            'layout' => 'default-layout',
+            'title' => 'Детям',
+            'description' => 'Описание страницы Детям',
+            'breadcrumb' => $breadcrumb
+          ];
+          return view('about-kids',$page);
     }
     public function parent(){
-        return 'about parent method';
+        $breadcrumb = [
+            ['title' => 'О нас','url' => 'about.index'],['title' => 'Родителям','url' => 'about.parent']];
+        $page = [
+            'layout' => 'default-layout',
+            'title' => 'Родителям',
+            'description' => 'Описание страницы Родителям',
+            'breadcrumb' => $breadcrumb
+          ];
+          return view('about-parent',$page);
     }
     public function team(){
-        return 'about team method';
+        $breadcrumb = [
+            ['title' => 'О нас','url' => 'about.index'],['title' => 'Команда','url' => 'about.team']];
+        $page = [
+            'layout' => 'default-layout',
+            'title' => 'Команда',
+            'description' => 'Описание страницы Команда',
+            'breadcrumb' => $breadcrumb
+          ];
+          return view('about-team',$page);
     }
 }
