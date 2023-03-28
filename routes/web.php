@@ -62,9 +62,10 @@ Route::group(['domain'=> env('APP_URL')],function(){
 
     // partnership group
     $partnerRoutes = function(){
-        Route::get('/partnership',function(){return 'Партнерство';})->name('partnership');
-        Route::get('/franchise',function(){return 'Франшиза';})->name('franchise');
-        Route::get('/corporate-clients',function(){return 'Корпоративные клиенты';})->name('corporate-clients');
+        Route::get('/','index')->name('index');
+        Route::get('/partnership','partnership')->name('partnership');
+        Route::get('/franchise','franchise')->name('franchise');
+        Route::get('/corporate-clients','corporate')->name('corporate-clients');
     };
     // end partnership group
 
