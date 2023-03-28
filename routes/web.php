@@ -54,9 +54,10 @@ Route::group(['domain'=> env('APP_URL')],function(){
 
     // gryadkacity life group
     $lifeRoutes = function(){
-        Route::get('/professions',function(){return 'Описание профессий';})->name('professions');
-        Route::get('/career',function(){return 'Описание профессий';})->name('career');
-        Route::get('/events',function(){return 'городские мероприятия';})->name('events');
+        Route::get('/','index')->name('index');
+        Route::get('/professions','professions')->name('professions');
+        Route::get('/career','career')->name('career');
+        Route::get('/events','events')->name('events');
     };
     // end gryadkacity life group
 

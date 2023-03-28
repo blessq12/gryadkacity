@@ -6,6 +6,23 @@ use Illuminate\Http\Request;
 
 class PartnershipController extends Controller
 {
+    public function __construct(){
+        $this->linkgroup = [
+            [
+                'title' => 'Сотрудничество',
+                'url' => 'cooperation.index'    
+            ],[
+                'title' => 'Партнерство',
+                'url' => 'cooperation.partnership'
+            ],[
+                'title' => 'Франшиза',
+                'url' => 'cooperation.franchise'
+            ],[
+                'title' => 'Корпоротивные клиенты',
+                'url' => 'cooperation.corporate-clients'
+            ]
+        ];
+    }
 
     public function index(){
         $breadcrumb = [['title' => 'Сотрудничество','url' => 'cooperation.index']];
@@ -13,7 +30,8 @@ class PartnershipController extends Controller
             'layout' => 'default-layout',
             'title' => 'Сотрудничество',
             'description' => 'Описание для страницы Сотрудничество',
-            'breadcrumb' => $breadcrumb
+            'breadcrumb' => $breadcrumb,
+            'linkgroup' => $this->linkgroup
         ];
         return view('cooperation',$page);
     }
@@ -23,7 +41,8 @@ class PartnershipController extends Controller
             'layout' => 'default-layout',
             'title' => 'Партнерство',
             'description' => 'Описание для страницы партнерства',
-            'breadcrumb' => $breadcrumb
+            'breadcrumb' => $breadcrumb,
+            'linkgroup' => $this->linkgroup
         ];
         return view('cooperation-partnership',$page);
     }
@@ -33,7 +52,8 @@ class PartnershipController extends Controller
             'layout' => 'default-layout',
             'title' => 'Франшиза',
             'description' => 'Описание для страницы Франшиза',
-            'breadcrumb' => $breadcrumb
+            'breadcrumb' => $breadcrumb,
+            'linkgroup' => $this->linkgroup
         ];
         return view('cooperation-franchise',$page);
     }
@@ -43,7 +63,8 @@ class PartnershipController extends Controller
             'layout' => 'default-layout',
             'title' => 'Корпоротивные клиенты',
             'description' => 'Описание для страницы Корпоротивные клиенты',
-            'breadcrumb' => $breadcrumb
+            'breadcrumb' => $breadcrumb,
+            'linkgroup' => $this->linkgroup
         ];
         return view('cooperation-corporate',$page);
     }

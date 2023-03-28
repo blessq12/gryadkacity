@@ -1,5 +1,6 @@
 @extends('components.'.$layout)
 @section('content')
+<x-link-bar :linkgroup='$linkgroup'/>
 <div class="container py-5">
     <div class="row">
         <div class="col-12">

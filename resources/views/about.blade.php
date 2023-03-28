@@ -1,5 +1,6 @@
 @extends('components.'.$layout)
 @section('content')
+<x-link-bar :linkgroup='$linkgroup'/>
 <section class="about-one">
     <img src="/assets/images/shapes/about-leaf-1-1.png" alt="" class="about-one__shape-1">
     <div class="container">

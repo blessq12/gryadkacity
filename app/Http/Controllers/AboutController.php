@@ -7,13 +7,31 @@ use SebastianBergmann\CliParser\RequiredOptionArgumentMissingException;
 
 class AboutController extends Controller
 {
+    public function __construct(){
+        $this->linkgroup = [
+            [
+                'title' => 'О нас',
+                'url' => 'about.index'
+            ],[
+                'title' => 'Детям',
+                'url' => 'about.kids'
+            ],[
+                'title' => 'Родителям',
+                'url' => 'about.parent'
+            ],[
+                'title' => 'Команда',
+                'url' => 'about.team'
+            ]
+        ];
+    }
     public function index(){
         $breadcrumb = [['title' => 'О нас','url' => 'about.index']];
         $page = [
           'layout' => 'default-layout',
           'title' => 'О нас',
           'description' => 'Описание страницы о нас',
-          'breadcrumb' => $breadcrumb
+          'breadcrumb' => $breadcrumb,
+          'linkgroup' => $this->linkgroup
         ];
         return view('about',$page);
     }
@@ -24,7 +42,8 @@ class AboutController extends Controller
             'layout' => 'default-layout',
             'title' => 'Детям',
             'description' => 'Описание страницы Детям',
-            'breadcrumb' => $breadcrumb
+            'breadcrumb' => $breadcrumb,
+            'linkgroup' => $this->linkgroup
           ];
           return view('about-kids',$page);
     }
@@ -35,7 +54,8 @@ class AboutController extends Controller
             'layout' => 'default-layout',
             'title' => 'Родителям',
             'description' => 'Описание страницы Родителям',
-            'breadcrumb' => $breadcrumb
+            'breadcrumb' => $breadcrumb,
+            'linkgroup' => $this->linkgroup
           ];
           return view('about-parent',$page);
     }
@@ -46,7 +66,8 @@ class AboutController extends Controller
             'layout' => 'default-layout',
             'title' => 'Команда',
             'description' => 'Описание страницы Команда',
-            'breadcrumb' => $breadcrumb
+            'breadcrumb' => $breadcrumb,
+            'linkgroup' => $this->linkgroup
           ];
           return view('about-team',$page);
     }

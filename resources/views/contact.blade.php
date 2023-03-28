@@ -1,6 +1,5 @@
 @extends('components.'.$layout)
 @section('content')
-{{ $path }}
 <section class="contact-one">
     <img src="assets/images/shapes/contact-bg-1-1.png" alt="" class="contact-one__shape-1">
     <img src="assets/images/shapes/contact-bg-1-2.png" alt="" class="contact-one__shape-2">

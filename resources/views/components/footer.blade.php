@@ -34,7 +34,7 @@
                     </ul><!-- /.list-unstyled footer-widget__contact -->
                 </div><!-- /.footer-widget -->
             </div><!-- /.col-sm-12 col-md-6 col-lg-2 -->
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-2">
+            <div class="col-6 col-md-6 col-lg-6 col-xl-2">
                 <div class="footer-widget footer-widget__links-widget">
                     <h3 class="footer-widget__title">Links</h3><!-- /.footer-widget__title -->
                     <ul class="list-unstyled footer-widget__links">
@@ -56,7 +56,7 @@
                     </ul><!-- /.list-unstyled footer-widget__contact -->
                 </div><!-- /.footer-widget -->
             </div><!-- /.col-sm-12 col-md-6 col-lg-2 -->
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-2">
+            <div class="col-6 col-md-6 col-lg-6 col-xl-2">
                 <div class="footer-widget">
                     <h3 class="footer-widget__title">Ссылки</h3><!-- /.footer-widget__title -->
                     <ul class="list-unstyled footer-widget__links">
