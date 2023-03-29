@@ -42,13 +42,13 @@ Route::group(['domain'=> env('APP_URL')],function(){
 
     // Types visit group
     $visitRoutes = function(){
-        Route::get('/',function(){return 'визиты главная';})->name('index');
-        Route::get('/individual',function(){ return 'свободное посещения';})->name('individual');
-        Route::get('/group',function(){return 'груповое посещения';})->name('group');
-        Route::get('/happybirthday',function(){return 'День рождения';})->name('happybirthday');
-        Route::get('/holydays',function(){return 'Каникулы';})->name('holydays');
-        Route::get('/graduation',function(){return 'Выпускной(дети заканчиваю школу/четверть и тд)';})->name('graduation');
-        Route::get('/newyear',function(){return 'Новый год 2024';})->name('newyear');
+        Route::get('/','index')->name('index');
+        Route::get('/individual','individual')->name('individual');
+        Route::get('/group','group')->name('group');
+        Route::get('/happybirthday','happybirthday')->name('happybirthday');
+        Route::get('/holidays','holidays')->name('holidays');
+        Route::get('/graduation','graduation')->name('graduation');
+        Route::get('/newyear','newyear')->name('newyear');
     };
     // end Types visit group
 
