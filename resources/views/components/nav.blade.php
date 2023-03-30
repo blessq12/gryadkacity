@@ -35,8 +35,13 @@
     <nav class="main-menu main-menu__two">
         <div class="container">
             <div class="main-logo">
-                <a href="{{ route('index') }}" class="logo">
-                    <img src="/assets/images/logo-light.png" width="105" alt="Грядка Сити">
+                <a href="{{ route('index') }}" class="logo d-flex align-items-center">
+                    <img src="/assets/images/logo.svg" height="50px" alt="Грядка Сити">
+                    <div class="d-block logo-text text-white">
+                        <p class="m-0">
+                            грядка<br>сити
+                        </p>
+                    </div>
                 </a>
                 <div class="mobile-nav__buttons">
                     <a href="#" class="search-toggler"><i class="organik-icon-magnifying-glass"></i></a>
@@ -48,6 +53,7 @@
                 <li><a href="{{ route('about.index') }}">{{ __('О грядка сити')}}</a></li>
                 <li><a href="{{ route('life.index') }}">{{ __('Жизнь в грядке') }}</a></li>
                 <li><a href="{{ route('cooperation.index') }}">{{ __('Сотрудничество')}}</a></li>
+                <li><a href="{{ route('visit.index') }}">{{ __('Посещения')}}</a></li>
                 <li><a href="{{ route('contact') }}">{{ __('Контакты')}}</a></li>
             </ul>
             <!-- /.main-menu__list -->
