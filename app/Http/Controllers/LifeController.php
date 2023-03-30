@@ -9,9 +9,6 @@ class LifeController extends Controller
     public function __construct(){
         $this->linkgroup = [
             [
-                'title' => 'Жизнь в грядке',
-                'url' => 'life.index'    
-            ],[
                 'title' => 'Професии',
                 'url' => 'life.professions'
             ],[

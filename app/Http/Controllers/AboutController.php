@@ -10,9 +10,6 @@ class AboutController extends Controller
     public function __construct(){
         $this->linkgroup = [
             [
-                'title' => 'О нас',
-                'url' => 'about.index'
-            ],[
                 'title' => 'Детям',
                 'url' => 'about.kids'
             ],[

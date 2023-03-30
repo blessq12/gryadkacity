@@ -22,3 +22,20 @@
   .banner-title{
     font-family: 'Gagalin'!important;
   }
+  .link-bar{
+    border:3px solid #dedede;
+    padding: 15px 35px;
+    border-radius: 1em;
+  }
+  .link-bar-list li a{
+      padding: 10px 20px;
+      color: #60be74;
+      font-size: 22px;
+      border-bottom: 2px solid #ffffff;
+  }
+  .link-bar-list li a.active{
+    background: #60be74;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-radius: 1em;
+  }
