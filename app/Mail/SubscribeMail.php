@@ -27,7 +27,7 @@ class SubscribeMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Subscribe Mail',
+            subject: 'Подписка на новости Грядка Сити',
         );
     }
 
@@ -37,7 +37,7 @@ class SubscribeMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'email.subscribe',
+            view: 'emails.subscribe',
         );
     }
 
