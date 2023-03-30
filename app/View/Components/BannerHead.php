@@ -13,7 +13,8 @@ class BannerHead extends Component
      */
     public function __construct(
         public string $title,
-        public $breadcrumb
+        public $breadcrumb,
+        public $bgimage = 'url(/assets/images/backgrounds/page-header-bg-1-1.jpg)'
     )
     {
         //

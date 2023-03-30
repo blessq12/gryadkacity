@@ -12,8 +12,8 @@ class MainController extends Controller
     public function index(){
         $page = [
             'layout' => 'front-layout',
-            'title' => 'Главная страница',
-            'description' => 'Описание главной страницы',
+            'title' => 'Город профессий',
+            'description' => 'Целая инфраструктура, продуманные игровые локации, которые дают возможность детям в игровой манере познакомиться с рядом профессий, развивать нужные навыки soft-skills и прийти к осознанному потреб...',
         ];
         return view('index',$page);
     }

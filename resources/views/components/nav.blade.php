@@ -37,7 +37,7 @@
             <div class="main-logo">
                 <a href="{{ route('index') }}" class="logo d-flex align-items-center">
                     <img src="/assets/images/logo.svg" height="50px" alt="Грядка Сити">
-                    <div class="d-block logo-text text-white">
+                    <div class="d-block logo-text">
                         <p class="m-0">
                             грядка<br>сити
                         </p>

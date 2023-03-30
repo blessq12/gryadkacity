@@ -32,6 +32,7 @@
 
     <!-- template styles -->
     <link rel="stylesheet" href="{{ asset('/assets/css/organik.css') }}" />
+    <link rel="stylesheet" href="{{ asset('/assets/css/style.css') }}" />
 </head>
 
 <body>
