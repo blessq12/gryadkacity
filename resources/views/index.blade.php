@@ -30,7 +30,7 @@
                         </div><!-- /.col-lg-7 text-right -->
                     </div><!-- /.row -->
                 </div><!-- /.container -->
-            </div><!-- /.swiper-slide -->
+            </div>
             <div class="swiper-slide">
                 <div class="image-layer" style="background-image: url(assets/images/main-slider/main-slider-2-2.jpg);">
                 </div>
@@ -47,18 +47,18 @@
                         </div><!-- /.col-lg-7 text-right -->
                     </div><!-- /.row -->
                 </div><!-- /.container -->
-            </div><!-- /.swiper-slide -->
-        </div><!-- /.swiper-wrapper -->
+            </div>
+        </div>
 
-        <!-- If we need navigation buttons -->
+        {{-- navigation buttons --}}
         <div class="main-slider__nav-two">
             <div class="swiper-button-prev" id="main-slider__swiper-button-next"><i class="organik-icon-left-arrow"></i>
             </div>
             <div class="swiper-button-next" id="main-slider__swiper-button-prev"><i class="organik-icon-right-arrow"></i></div>
-        </div><!-- /.main-slider__nav -->
+        </div><
 
-    </div><!-- /.swiper-container thm-swiper__slider -->
-</section><!-- /.main-slider -->
+    </div>
+</section>
 
 <section class="featured-category">
     <div class="featured-category__head" style="background-image: url(assets/images/shapes/category-bg-1-1.png);">
@@ -73,8 +73,8 @@
     </div><!-- /.featured-category__head -->
     <div class="featured-category__carousel-wrap wow fadeInUp" data-wow-duration="1500ms">
         <div class="swiper-container thm-swiper__slider" data-swiper-options='{
-"slidesPerView": 1,
-"loop": true,
+"slidesPerView": 2,
+"loop": false,
 "navigation": {
     "nextEl": "#featured-category__swiper-button-next",
     "prevEl": "#featured-category__swiper-button-prev"
@@ -100,35 +100,34 @@
                 <div class="swiper-slide">
                     <div class="featured-category__box">
                         <i class="organik-icon-harvest"></i>
-                        <h3><a href="products.html">Vagetables</a></h3>
-                    </div><!-- /.featured-category__box -->
-                </div><!-- /.swiper-slide -->
+                        <h3><a href="products.html">О Грядке</a></h3>
+                    </div>
+                </div>
                 <div class="swiper-slide">
                     <div class="featured-category__box">
                         <i class="organik-icon-fruits"></i>
-                        <h3><a href="products.html">Fruits</a></h3>
-                    </div><!-- /.featured-category__box -->
-                </div><!-- /.swiper-slide -->
+                        <h3><a href="products.html">Жизнь в грядке</a></h3>
+                    </div>
+                </div>
                 <div class="swiper-slide">
                     <div class="featured-category__box">
                         <i class="organik-icon-dairy-products"></i>
-                        <h3><a href="products.html">Dairy</a></h3>
-                    </div><!-- /.featured-category__box -->
-                </div><!-- /.swiper-slide -->
+                        <h3><a href="products.html">Посещения</a></h3>
+                    </div>
+                </div>
                 <div class="swiper-slide">
                     <div class="featured-category__box">
                         <i class="organik-icon-boiled"></i>
-                        <h3><a href="products.html">Chicken</a></h3>
-                    </div><!-- /.featured-category__box -->
-                </div><!-- /.swiper-slide -->
+                        <h3><a href="products.html">Сотрудничество</a></h3>
+                    </div>
+                </div>
                 <div class="swiper-slide">
                     <div class="featured-category__box">
                         <i class="organik-icon-fish"></i>
-                        <h3><a href="products.html">Fish</a></h3>
-                    </div><!-- /.featured-category__box -->
-                </div><!-- /.swiper-slide -->
-            </div><!-- /.swiper-wrapper -->
-
+                        <h3><a href="products.html">Контакты</a></h3>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- If we need navigation buttons -->
@@ -196,7 +195,7 @@
                             <p>$1.00</p>
                         </div><!-- /.product-card__two-content -->
                     </div><!-- /.product-card__two -->
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <div class="product-card__two">
                         <div class="product-card__two-image">
@@ -220,7 +219,7 @@
                             <p>$9.00</p>
                         </div><!-- /.product-card__two-content -->
                     </div><!-- /.product-card__two -->
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <div class="product-card__two">
                         <div class="product-card__two-image">
@@ -244,7 +243,7 @@
                             <p>$3.00</p>
                         </div><!-- /.product-card__two-content -->
                     </div><!-- /.product-card__two -->
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <div class="product-card__two">
                         <div class="product-card__two-image">
@@ -268,7 +267,7 @@
                             <p>$1.00</p>
                         </div><!-- /.product-card__two-content -->
                     </div><!-- /.product-card__two -->
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <div class="product-card__two">
                         <div class="product-card__two-image">
@@ -292,7 +291,7 @@
                             <p>$2.00</p>
                         </div><!-- /.product-card__two-content -->
                     </div><!-- /.product-card__two -->
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <div class="product-card__two">
                         <div class="product-card__two-image">
@@ -316,7 +315,7 @@
                             <p>$2.00</p>
                         </div><!-- /.product-card__two-content -->
                     </div><!-- /.product-card__two -->
-                </div><!-- /.swiper-slide -->
+                </div>
             </div><!-- /.swiper-wrapper -->
 
         </div>
@@ -370,19 +369,19 @@
                         <h3>Latest
                             Products</h3>
                     </div><!-- /.feature-two__box -->
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <div class="feature-two__box" style="background-image: url(assets/images/resources/feature-bg-1-2.png);">
                         <h3>Diet
                             Recipe</h3>
                     </div><!-- /.feature-two__box -->
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <div class="feature-two__box" style="background-image: url(assets/images/resources/feature-bg-1-3.png);">
                         <h3>Pure
                             Organic</h3>
                     </div><!-- /.feature-two__box -->
-                </div><!-- /.swiper-slide -->
+                </div>
             </div><!-- /.row -->
 
         </div><!-- /.swiper-container -->
@@ -451,7 +450,7 @@
                             </div><!-- /.product-card__right -->
                         </div><!-- /.product-card__content -->
                     </div><!-- /.product-card -->
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <div class="product-card">
                         <div class="product-card__image">
@@ -475,7 +474,7 @@
                             </div><!-- /.product-card__right -->
                         </div><!-- /.product-card__content -->
                     </div><!-- /.product-card -->
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <div class="product-card">
                         <div class="product-card__image">
@@ -499,7 +498,7 @@
                             </div><!-- /.product-card__right -->
                         </div><!-- /.product-card__content -->
                     </div><!-- /.product-card -->
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <div class="product-card">
                         <div class="product-card__image">
@@ -523,7 +522,7 @@
                             </div><!-- /.product-card__right -->
                         </div><!-- /.product-card__content -->
                     </div><!-- /.product-card -->
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <div class="product-card">
                         <div class="product-card__image">
@@ -547,7 +546,7 @@
                             </div><!-- /.product-card__right -->
                         </div><!-- /.product-card__content -->
                     </div><!-- /.product-card -->
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <div class="product-card">
                         <div class="product-card__image">
@@ -571,7 +570,7 @@
                             </div><!-- /.product-card__right -->
                         </div><!-- /.product-card__content -->
                     </div><!-- /.product-card -->
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <div class="product-card">
                         <div class="product-card__image">
@@ -595,7 +594,7 @@
                             </div><!-- /.product-card__right -->
                         </div><!-- /.product-card__content -->
                     </div><!-- /.product-card -->
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <div class="product-card">
                         <div class="product-card__image">
@@ -619,7 +618,7 @@
                             </div><!-- /.product-card__right -->
                         </div><!-- /.product-card__content -->
                     </div><!-- /.product-card -->
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <div class="product-card">
                         <div class="product-card__image">
@@ -643,7 +642,7 @@
                             </div><!-- /.product-card__right -->
                         </div><!-- /.product-card__content -->
                     </div><!-- /.product-card -->
-                </div><!-- /.swiper-slide -->
+                </div>
             </div><!-- /.row -->
 
         </div><!-- /.swiper-container -->
@@ -817,64 +816,64 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
+                </div>
                 <div class="swiper-slide">
                     <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
+                </div>
             </div><!-- /.swiper-wrapper -->
         </div><!-- /.thm-swiper__slider -->
     </div><!-- /.container -->

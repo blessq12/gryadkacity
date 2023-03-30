@@ -5,38 +5,41 @@
         <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
                 <div class="footer-widget footer-widget__about-widget">
-                    <a href="index.html" class="footer-widget__logo">
-                        <img src="/assets/images/logo-light.png" alt="" width="105" height="43">
+                    <a href="{{ route('index') }}" class="footer-widget__logo d-flex align-items-center">
+                        <img src="/assets/images/logo.svg" alt="" height="50px">
+                        <div class="d-block">
+                            <p class="m-0 logo-text">
+                                грядка  <br>сити
+                            </p>
+                        </div>
                     </a>
-                    <p class="thm-text-dark">Atiam rhoncus sit amet adip
-                        scing sed ipsum. Lorem ipsum
-                        dolor sit amet adipiscing <br>
-                        sem neque.</p>
-                </div><!-- /.footer-widget -->
-            </div><!-- /.col-sm-12 col-md-6 -->
+                    <p class="thm-text-dark">
+                        Изучаем профессии, зарабатываем и тратим валюту города, прокачиваем навыки
+                    </p>
+                </div>
+            </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-2">
                 <div class="footer-widget footer-widget__contact-widget">
-                    <h3 class="footer-widget__title">Contact</h3><!-- /.footer-widget__title -->
+                    <h3 class="footer-widget__title">Контакты</h3>
                     <ul class="list-unstyled footer-widget__contact">
                         <li>
                             <i class="fa fa-phone-square"></i>
-                            <a href="tel:666-888-0000">666 888 0000</a>
+                            <a href="tel:+7 (3822) 97-99-25">+7 (3822) 97-99-25</a>
                         </li>
                         <li>
                             <i class="fa fa-envelope"></i>
-                            <a href="mailto:info@company.com">info@company.com</a>
+                            <a href="mailto:gryadkacity@yandex.ru">gryadkacity@yandex.ru</a>
                         </li>
                         <li>
                             <i class="fa fa-map-marker-alt"></i>
-                            <a href="#">66 top broklyn street.
-                                New York</a>
+                            <a href="">Б. Подгорная улица, 87</a>
                         </li>
-                    </ul><!-- /.list-unstyled footer-widget__contact -->
-                </div><!-- /.footer-widget -->
-            </div><!-- /.col-sm-12 col-md-6 col-lg-2 -->
+                    </ul>
+                </div>
+            </div>
             <div class="col-6 col-md-6 col-lg-6 col-xl-2">
                 <div class="footer-widget footer-widget__links-widget">
-                    <h3 class="footer-widget__title">Links</h3><!-- /.footer-widget__title -->
+                    <h3 class="footer-widget__title">Links</h3>
                     <ul class="list-unstyled footer-widget__links">
                         <li>
                             <a href="index.html">Top Sellers</a>
@@ -53,12 +56,12 @@
                         <li>
                             <a href="contact.html">Help</a>
                         </li>
-                    </ul><!-- /.list-unstyled footer-widget__contact -->
-                </div><!-- /.footer-widget -->
-            </div><!-- /.col-sm-12 col-md-6 col-lg-2 -->
+                    </ul>
+                </div>
+            </div>
             <div class="col-6 col-md-6 col-lg-6 col-xl-2">
                 <div class="footer-widget">
-                    <h3 class="footer-widget__title">Ссылки</h3><!-- /.footer-widget__title -->
+                    <h3 class="footer-widget__title">Ссылки</h3>
                     <ul class="list-unstyled footer-widget__links">
                         <li>
                             <a href="{{ route('subroute',['sub'=>'franshiza']) }}">Франшиза</a>

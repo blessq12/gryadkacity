@@ -39,7 +39,7 @@
                     <img src="/assets/images/logo.svg" height="50px" alt="Грядка Сити">
                     <div class="d-block logo-text">
                         <p class="m-0">
-                            грядка<br>сити
+                            грядка  <br>сити
                         </p>
                     </div>
                 </a>
@@ -52,8 +52,8 @@
             <ul class="main-menu__list">
                 <li><a href="{{ route('about.index') }}">{{ __('О грядка сити')}}</a></li>
                 <li><a href="{{ route('life.index') }}">{{ __('Жизнь в грядке') }}</a></li>
-                <li><a href="{{ route('cooperation.index') }}">{{ __('Сотрудничество')}}</a></li>
                 <li><a href="{{ route('visit.index') }}">{{ __('Посещения')}}</a></li>
+                <li><a href="{{ route('cooperation.index') }}">{{ __('Сотрудничество')}}</a></li>
                 <li><a href="{{ route('contact') }}">{{ __('Контакты')}}</a></li>
             </ul>
             <!-- /.main-menu__list -->
