@@ -78,8 +78,9 @@
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
                 <div class="footer-widget">
                     <h3 class="footer-widget__title">Быть в курсе новостей</h3>
-                    <form action="#" data-url="YOUR_MAILCHIMP_URL" class="mc-form">
-                        <input type="email" name="EMAIL" id="mc-email" placeholder="Введите ваш Email">
+                    <form action="{{ route('subscribe') }}" method="post" class="mc-form">
+                        @csrf
+                        <input type="email" name="email" placeholder="Введите ваш Email">
                         <button type="submit">Подписаться</button>
                     </form>
                     <div class="mc-form__response"></div>
@@ -113,7 +114,6 @@
 <script src="{{ asset('/assets/vendors/bootstrap/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('/assets/vendors/bootstrap-select/bootstrap-select.min.js') }}"></script>
 <script src="{{ asset('/assets/vendors/jarallax/jarallax.min.js') }}"></script>
-<script src="{{ asset('/assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}"></script>
 <script src="{{ asset('/assets/vendors/jquery-appear/jquery.appear.min.js') }}"></script>
 <script src="{{ asset('/assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js') }}"></script>
 <script src="{{ asset('/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js') }}"></script>

@@ -6,6 +6,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\LifeController;
 use App\Http\Controllers\PartnershipController;
 use App\Http\Controllers\VisitController;
+use App\Http\Controllers\ActionController;
 // fasades
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
@@ -96,6 +97,9 @@ Route::group(['domain'=> env('APP_URL')],function(){
             Route::get('/','index')->name('index');
             Route::get('/contact','contact')->name('contact');
         });
+
+    //subscribe
+    Route::post('/action/send',[ActionController::class,'send'])->name('subscribe');
 });
 
 
