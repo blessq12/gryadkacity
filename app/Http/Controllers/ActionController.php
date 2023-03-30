@@ -10,9 +10,7 @@ class ActionController extends Controller
 {
     public function subscribe(Request $request){
         $email = $request->input('email');
-        
-        Mail::send('email.subscribe',['email' => $email],function($th){
-            $th->to('code70@inbox.ru');
-        });
+
+        Mail::to('code70@inbox.ru')->send(new SubscribeMail($email));
     }
 }
