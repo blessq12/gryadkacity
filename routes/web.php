@@ -99,7 +99,7 @@ Route::group(['domain'=> env('APP_URL')],function(){
         });
 
     //subscribe
-    Route::post('/action/send',[ActionController::class,'send'])->name('subscribe');
+    Route::post('/action/subscribe',[ActionController::class,'subscribe'])->name('subscribe');
 });
 
 
