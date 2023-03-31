@@ -1,6 +1,6 @@
 <div class="container py-5">
     <div class="row justify-content-center align-items-center">
-        <div class="col-12 col-md-10 col-lg-10 link-bar">
+        <div class="col-12 col-md-12 col-lg-12 link-bar">
             <ul class="list-unstyled d-flex m-0 justify-content-between link-bar-list">
                 @foreach ($linkgroup as $link)
                     
